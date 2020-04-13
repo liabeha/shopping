@@ -1,0 +1,91 @@
+page {
+    background-color: #dedede;
+    padding: 20rpx;
+    height: 100%;
+}
+
+.search_row {
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    padding-right: 20rpx;
+    top: 0;
+    height: 90rpx;
+    display: flex;
+    position: fixed;
+    background-color: #dedede;
+    width: 100%;
+
+    .search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #dedede; 
+        padding-right: 20rpx;   
+        width: 100%;
+        .xcc{
+            // flex: 8;
+            display: flex;
+            flex-wrap: nowrap;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            input {
+                flex: 11;
+                width: 580rpx;
+                height: 100%;
+                background-color: #fff;
+                padding-left: 20rpx;
+                border-radius: 10rpx 0 0 10rpx;
+            }
+            .xx{
+                flex: 1;
+                height: 100%;
+                // width: 28rpx;
+                border-radius: 0 10rpx 10rpx 0;
+                background-color: #fff;
+                color: #dedede;
+     
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        
+
+    }
+}
+
+// .sousuo {
+//     font-size: 26rpx;
+//     top: 90rpx;
+//     width: 100%;
+//     padding: 0;
+//     margin: 0 10rpx;
+//     height: 90rpx;
+//     margin-top: 90rpx;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 10rpx;
+//     border: 0;
+//     position: fixed;
+// }
+
+
+.search_content {
+    margin-top: 80rpx;
+
+    .search_item {
+        color: #454545;
+        background-color: #fff;
+        font-size: 24rpx;
+        padding: 15rpx 10rpx;
+        border-bottom: 1rpx solid #ccc;
+
+        overflow: hidden; // 超出隐藏
+        white-space: nowrap; // 不换行
+        text-overflow: ellipsis; // 超出显示 ...
+    }
+}

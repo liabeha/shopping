@@ -1,0 +1,15 @@
+button {
+  margin-top: 40rpx;
+  width: 70%;
+}
+.totalPrice {
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 40rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

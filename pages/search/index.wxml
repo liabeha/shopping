@@ -1,0 +1,17 @@
+<view class="search_row">
+    <view class="search">
+        <view class="xcc" style="background-color:#fff;">
+        <input value='{{inputValue}}' focus="true" bindconfirm="wangchenchufa" placeholder="请输入您要搜索的商品" bindinput="handleInput" confirm-type="search"></input>
+        <!-- <view hidden="{{ycang=='false'}}" class="xx"></view> -->
+        <view hidden="{{inputValue ==''}}" class="xx" bindtap="textbind">X</view>       
+        </view>
+    </view>
+</view>
+<!-- <button style="width: 100%;" class="sousuo" bindtap="sousuo">搜索</button> -->
+
+<view class="search_content">
+    <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" 
+    class="search_item" wx:for="{{goods.goods}}" wx:key="goods_id">
+        {{item.goods_name}}
+    </navigator>
+</view>

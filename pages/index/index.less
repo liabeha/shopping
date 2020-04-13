@@ -1,0 +1,53 @@
+.index_swiper{
+    swiper{
+        width: 750rpx;    // 在小程序里width:750rpx默认为width:100%; (当前可省略)
+        height: 340rpx;
+        image{
+            width: 100%;
+        }
+    }
+}
+
+.index_cate{
+    display: flex;
+    navigator{
+        padding: 20rpx;
+        flex: 1;
+        image{
+            width: 100%;    // 宽度等于父元素的宽度
+        }
+    }
+}
+
+.index_floor{
+    .floor_group{
+        .floor_title{
+            padding: 10rpx 0;
+            image{
+                width: 100%;
+            }
+        }
+        .floor_list{
+            overflow: hidden;   // 清除浮动
+            navigator{
+                float: left;
+                width: 33.33%;
+                // 后四个navigator标签
+                &:nth-last-child(-n+4){   // -n+4 < 0 应该会失效
+                    // 232 / 386 = 33.33vw / height
+                    height: 33.33vw * 386 / 232 / 2;
+                    border-left: 10rpx solid #fff;
+                }
+                // 2和3两个navigator标签
+                &:nth-child(2),
+                &:nth-child(3){
+                    border-bottom: 10rpx solid #fff;
+                }
+                image{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

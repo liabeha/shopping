@@ -1,0 +1,10 @@
+<!-- <button type="warn" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+    获取授权
+</button> -->
+
+<view>
+    <image src="/icons/map.jpg" mode="widthFix" lazy-load="false" binderror="" bindload="">
+    </image>
+</view>
+<view class="totalPrice">￥{{totalPrice}}</view>
+<button type="warn" hover-class="button-hover" bindtap="button_money">点击支付</button>

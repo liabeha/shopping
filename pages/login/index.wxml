@@ -1,0 +1,2 @@
+<!-- open-type="getUserInfo" bindgetuserinfo="handleGetuserinfo"要结合使用，能获取用户昵称、头像等 -->
+<button type="warn" plain="{{true}}" open-type="getUserInfo" bindgetuserinfo="handleGetuserinfo"> 登录</button>

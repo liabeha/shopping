@@ -1,0 +1,114 @@
+page{
+    padding-bottom: 90rpx;
+}
+
+.detail_swipre{
+    swiper{
+        height: 65vw;
+        text-align: center;
+        image{
+            width: 60%;
+        }
+    }
+}
+
+.goods_price{
+    padding: 15rpx;
+    font-size: 32rpx;
+    font-weight: 600;    // 加粗
+    color: var(--themeColor);
+}
+.goods_name_row{
+    border-top: 5rpx solid #dedede;
+    border-bottom: 5rpx solid #dedede;
+    padding: 10rpx 0;
+    display: flex;
+    .goods_name{
+        flex: 5;
+        color: #000;
+        font-size: 30rpx;
+        padding: 5rpx 10rpx;
+        // 超出两行显示 ...
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    .goods_collect{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 1rpx solid #000;
+        .iconfont{}
+        .icon-shoucang1{
+            color: orangered;
+        }
+        .collect_text{}
+    }
+}
+
+.goods_info{
+    .goods_info_title{
+        padding: 20rpx;
+        font-size: 32rpx;
+        color: var(--themeColor);
+        font-weight: 600;
+    }
+    .goods_info_content{
+        border-top: 5rpx solid #dedede;
+        padding-top: 10rpx;
+    }
+}
+
+.btm_tool{
+    position: fixed;     // 固定在屏幕显示
+    left: 0;             // 横向，从左往右来排
+    bottom: 0;           // 固定在底部
+    width: 100%;
+    height: 90rpx;
+    background-color: #fff;
+    display: flex;
+    border-top: 1rpx solid #ccc;
+    .tool_item{
+        flex: 1;
+        display: flex;
+        flex-direction: column;    // 改变主轴为上下方向
+        justify-content: center;
+        align-items: center;
+        font-size: 23rpx;
+        position: relative;
+        button{
+            position: absolute;    // 根据父元素来定位
+            // 子元素完全覆盖父元素
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;    // 透明度为0，完全透明
+        }
+    }
+    .btn_cart{
+        flex: 2;
+        display: flex;
+        flex-direction: column;    // 改变主轴为上下方向
+        justify-content: center;
+        align-items: center;
+        background-color: #ffa500;
+        color: #fff;
+        font-size: 30rpx;
+        font-weight: 600;
+    }
+    .btn_buy{
+        flex: 2;
+        display: flex;
+        flex-direction: column;    // 改变主轴为上下方向
+        justify-content: center;
+        align-items: center;
+        background-color: #eb4450;
+        color: #fff;
+        font-size: 30rpx;
+        font-weight: 600;
+    }
+}
