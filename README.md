@@ -6,7 +6,7 @@
 
 ## 体验版
 
-![优购商城小程序 - 副本](image/优购商城小程序 - 副本.jpg)
+![优购商城小程序 - 副本](https://github.com/liabeha/shopping/image/优购商城小程序-副本.jpg)
 
 ## 页面展示
 
